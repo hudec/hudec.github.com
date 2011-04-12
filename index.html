@@ -3,14 +3,14 @@
 <head>
   <meta charset='utf-8'>
 
-  <title>hudec/sql-processor @ GitHub</title>
+  <title>SQL Processor - Data Driven Queries</title>
 
   <style type="text/css">
     body {
       margin-top: 1.0em;
-      background-color: #8efb91;
+      background-color: #fff;
       font-family: Helvetica, Arial, FreeSans, san-serif;
-      color: #000000;
+      color: #000;
     }
     #container {
       margin: 0 auto;
@@ -24,7 +24,7 @@
     a { color: #71046e; }
     .description { font-size: 1.2em; margin-bottom: 30px; margin-top: 30px; font-style: italic;}
     .download { float: right; }
-    pre { background: #000; color: #fff; padding: 15px;}
+    pre { background: #fff; color: #000; padding: 15px;font-size: 1.5em; }
     hr { border: 0; width: 80%; border-bottom: 1px solid #aaa}
     .footer { text-align:center; padding-top:30px; font-style: italic; }
   </style>
@@ -42,17 +42,41 @@
         <img border="0" width="90" src="http://github.com/images/modules/download/tar.png"></a>
     </div>
 
-    <h1><a href="http://github.com/hudec/sql-processor">sql-processor</a>
-      <span class="small">by <a href="http://github.com/hudec">hudec</a></span></h1>
+    <h1><a href="http://github.com/hudec/sql-processor">SQL Processor</a></h1>
+    <h2>Data Driven Queries</h2>
 
     <div class="description">
-      The SQL Processor is an engine producing the ANSI SQL statements and providing their execution without the necessity to write Java plumbing code related to the ORM or JDBC API.
+      The <b>SQL Processor</b> is an engine producing the ANSI SQL statements and providing their execution without the necessity to write Java plumbing code related to the ORM or JDBC API. The input to the SQL Processor is
+      <ul>
+        <li>a <b>search form</b> (or a question form or the <b>input values</b>), which is just a POJO. Typically this form is seeded by an end user in a presentation layer of a web application.</li>
+        <li>a <b>META SQL</b> query or statement, which is an enhanced ANSI SQL statement. This enhancement is defined in ANTLR based grammar. All the META SQL statements are defined in the query properties file.</li>
+        <li>an <b>output mapping rule</b>, which is a mapping prescription from an SQL query result to the Java output classes values. This prescription syntax is again defined in ANTLR based grammar. All the mapping rules are also defined in the query properties file.</li> 
+      </ul>
+      Based on the inputs the final SQL query/statement is generated. The parameters are bounded and finally this query/statement is executed. This process is known as a Data Driven Query. The binding of the input values is done using the Reflection API, without any Java plumbing code. The output of the SQL Processor is
+      <ul>
+        <li>a list of <b>result class</b> instances (or data transfer objects or the output values). Each result class instance is created using the Reflection API, again without any Java plumbing code.</li>
+      </ul>
     </div>
 
-    <h2>Authors</h2>
-<p>Vladimír Hudec (Vladimir.Hudec@gmail.com)<br/><br/>      </p>
-<h2>Contact</h2>
-<p>Vladimír Hudec (Vladimir.Hudec@gmail.com)<br/>      </p>
+    <h2>Available resources</h2>
+      <p>The SQL Processor is available from the next Maven repos:        <ul>
+          <li><a href="https://oss.sonatype.org/content/groups/public/org/sqlproc/">https://oss.sonatype.org/content/groups/public/org/sqlproc/</a></li>
+          <li><a href="http://repo2.maven.org/maven2/org/sqlproc/">http://repo2.maven.org/maven2/org/sqlproc/</a></li>
+        </ul>
+      </p>
+      <p>Tutorials and sources:
+        <ul>
+          <li><a href="https://github.com/hudec/sql-processor/wiki">GitHub Wiki home page</a></li>
+          <li><a href="https://github.com/hudec/sql-processor/">GitHub Source home page</a></li>
+          <li><a href="http://code.google.com/p/sql-processor/">Google Code home page</a></li>
+        </ul>
+      </p>
+    <h2>News</h2>
+      <p><h4>April 10th, 2011 - Version 1.4.2</h4>        The version 1.4.2 is ready and released. The only new feature is that it's released from the GIT repo.      
+      </p>
+      <p><h4>April 9th, 2011 - Migration to GitHub</h4>
+        The migration of the SQL Processor from http://code.google.com/p/sql-processor/ has been started. On that site you can find more information. In a couple of week the most important tutorials will be migrated to GitHub.  
+      </p>
 
 
     <h2>Download</h2>
@@ -65,10 +89,6 @@
       by running:
       <pre>$ git clone git://github.com/hudec/sql-processor</pre>
     </p>
-
-    <div class="footer">
-      get the source code on GitHub : <a href="http://github.com/hudec/sql-processor">hudec/sql-processor</a>
-    </div>
 
   </div>
 
