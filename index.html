@@ -59,16 +59,17 @@
     <h2>Data Driven Queries</h2>
 
     <div class="description">
-      The <b>SQL Processor</b> is an engine producing the ANSI SQL statements and providing their execution without the necessity to write Java plumbing code related to the ORM or JDBC API. The input to the SQL Processor is
+      The <b>SQL Processor</b> (or <b>SQLP</b>) is an engine producing the ANSI SQL statements and providing their execution without the necessity to write Java plumbing code related to the ORM or JDBC API. The input to the SQL Processor is
       <ul>
         <li>a <b>search form</b> (or a question form or the <b>input values</b>), which is just a POJO. Typically this form is seeded by an end user in a presentation layer of a web application.</li>
-        <li>a <b>META SQL</b> query or statement, which is an enhanced ANSI SQL statement. This enhancement is defined in ANTLR based grammar. All the META SQL statements are defined in the query properties file.</li>
-        <li>an <b>output mapping rule</b>, which is a mapping prescription from an SQL query result to the Java output classes values. This prescription syntax is again defined in ANTLR based grammar. All the mapping rules are also defined in the query properties file.</li> 
+        <li>a <b>META SQL</b> query or statement, which is an enhanced ANSI SQL statement. This enhancement is defined in ANTLR based grammar. All the META SQL statements are defined in the meta statements file.</li>
+        <li>an <b>output mapping rule</b>, which is a mapping prescription from an SQL query result to the Java output classes values. This prescription syntax is again defined in ANTLR based grammar. All the mapping rules are also defined in the meta statements file.</li> 
       </ul>
-      Based on the inputs the final SQL query/statement is generated. The parameters are bounded and finally this query/statement is executed. This process is known as a Data Driven Query. The binding of the input values is done using the Reflection API, without any Java plumbing code. The output of the SQL Processor is
+      Based on the inputs the final SQL query/statement is generated. The parameters are bounded and finally this query/statement is executed. This process is known as a <b>Data Driven Query</b>. The binding of the input values is done using the Reflection API, without any Java plumbing code. The output of the SQL Processor is
       <ul>
         <li>a list of <b>result class</b> instances (or data transfer objects or the output values). Each result class instance is created using the Reflection API, again without any Java plumbing code.</li>
       </ul>
+      The <b>SQL Processor Eclipse Plugin</b> (or <b>SQLEP</b>) enables smart edition of the SQL Processor (SQLP) artefacts, POJO and DAO modelling and SQLP artefacts generation based on DB model (including all META SQL statements, POJO and DAO Java code).
     </div>
 
     <h2>Available resources</h2>
@@ -83,6 +84,12 @@
           <li><a href="https://github.com/hudec/sql-processor/wiki">GitHub Wiki home page</a></li>
           <li><a href="https://github.com/hudec/sql-processor/">GitHub Source home page</a></li>
           <li><a href="http://code.google.com/p/sql-processor/">Google Code home page</a></li>
+        </ul>
+      </p>
+      <p>The SQL Processor Eclipse Plugin is available from the next P2 repos:
+        <ul>
+          <li><a href="http://sql-processor.org/plugins/milestones/">http://sql-processor.org/plugins/milestones/</a></li>
+          <li><a href="http://sql-processor.org/plugins/releases/">http://sql-processor.org/plugins/releases/</a> - available soon</li>
         </ul>
       </p>
 
