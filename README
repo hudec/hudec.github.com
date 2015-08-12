@@ -11,7 +11,7 @@ mvn install:install-file -Dfile=OracleDriver-6.jar -DgroupId=oracle.jdbc -Dartif
 
 Informix
 mvn install:install-file -Dfile=ifxjdbc-4.1.jar -DgroupId=com.ibm.informix -DartifactId=ifxjdbc -Dversion=4.1 -Dpackaging=jar
-mvn install:install-file -Dfile=ifxjdbcx-4.1.jar -DgroupId=com.ibm.informix -DartifactId=ifxjdbc -Dversion=4.1 -Dpackaging=jar
+mvn install:install-file -Dfile=ifxjdbcx-4.1.jar -DgroupId=com.ibm.informix -DartifactId=ifxjdbcx -Dversion=4.1 -Dpackaging=jar
 
 MSSQL
 mvn install:install-file -Dfile=sqljdbc_4.1/enu/sqljdbc4.jar -DgroupId=com.microsoft.sqlserver -DartifactId=sqljdbc4 -Dversion=4.1 -Dpackaging=jar
