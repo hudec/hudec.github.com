@@ -1,0 +1,22 @@
+SQLEP
+mvn install:install-file -Dfile=sqlep.jar -DgroupId=org.sqlproc.dsl -DartifactId=sqlep -Dversion=2.0.1-SNAPSHOT -Dpackaging=jar
+
+SQLMEP/SQLMOP
+mvn install:install-file -Dfile=sqlmeta.jar -DgroupId=org.sqlproc.meta -DartifactId=sqlmeta -Dversion=2.3.7 -Dpackaging=jar
+mvn install:install-file -Dfile=sqlmodel.jar -DgroupId=org.sqlproc.model -DartifactId=sqlmodel -Dversion=2.3.7 -Dpackaging=jar
+
+Oracle
+mvn install:install-file -Dfile=OracleDriver-6.jar -DgroupId=oracle.jdbc -DartifactId=OracleDriver -Dversion=6 -Dpackaging=jar
+mvn install:install-file -Dfile=OracleDriver-6.jar -DgroupId=oracle.jdbc -DartifactId=OracleDriver -Dversion=11.2.0.4 -Dpackaging=jar
+
+Informix
+mvn install:install-file -Dfile=ifxjdbc-4.1.jar -DgroupId=com.ibm.informix -DartifactId=ifxjdbc -Dversion=4.1 -Dpackaging=jar
+mvn install:install-file -Dfile=ifxjdbcx-4.1.jar -DgroupId=com.ibm.informix -DartifactId=ifxjdbcx -Dversion=4.1 -Dpackaging=jar
+
+MSSQL
+mvn install:install-file -Dfile=sqljdbc_4.1/enu/sqljdbc4.jar -DgroupId=com.microsoft.sqlserver -DartifactId=sqljdbc4 -Dversion=4.1 -Dpackaging=jar
+
+DB2
+10.5.0.5-FP005
+
+
