@@ -2,8 +2,8 @@ SQLEP
 mvn install:install-file -Dfile=sqlep.jar -DgroupId=org.sqlproc.dsl -DartifactId=sqlep -Dversion=2.0.1-SNAPSHOT -Dpackaging=jar
 
 SQLMEP/SQLMOP
-mvn install:install-file -Dfile=sqlmeta.jar -DgroupId=org.sqlproc.meta -DartifactId=sqlmeta -Dversion=2.5.1-SNAPSHOT -Dpackaging=jar
-mvn install:install-file -Dfile=sqlmodel.jar -DgroupId=org.sqlproc.model -DartifactId=sqlmodel -Dversion=2.5.1-SNAPSHOT -Dpackaging=jar
+mvn install:install-file -Dfile=sqlmeta.jar -DgroupId=org.sqlproc.meta -DartifactId=sqlmeta -Dversion=2.5.1 -Dpackaging=jar
+mvn install:install-file -Dfile=sqlmodel.jar -DgroupId=org.sqlproc.model -DartifactId=sqlmodel -Dversion=2.5.1 -Dpackaging=jar
 
 Oracle
 mvn install:install-file -Dfile=OracleDriver-6.jar -DgroupId=oracle.jdbc -DartifactId=OracleDriver -Dversion=6 -Dpackaging=jar
