@@ -20,6 +20,6 @@ DB2
 10.5.0.5-FP005
 
 SQLMEP/SQLMOP
-mvn install:install-file -Dfile=sqlmeta.jar -DgroupId=org.sqlproc.meta -DartifactId=sqlmeta -Dversion=2.7.1 -Dpackaging=jar
-mvn install:install-file -Dfile=sqlmodel.jar -DgroupId=org.sqlproc.model -DartifactId=sqlmodel -Dversion=2.7.1 -Dpackaging=jar
+mvn install:install-file -Dfile=sqlmeta.jar -DgroupId=org.sqlproc.meta -DartifactId=sqlmeta -Dversion=2.7.2 -Dpackaging=jar
+mvn install:install-file -Dfile=sqlmodel.jar -DgroupId=org.sqlproc.model -DartifactId=sqlmodel -Dversion=2.7.2 -Dpackaging=jar
 
