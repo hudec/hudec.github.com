@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes","url":"allclasses-index.html"},{"p":"org.sqlproc.engine.spring","l":"SpringEngineFactory"},{"p":"org.sqlproc.engine.spring.jmx","l":"SpringEngineFactoryJmx"},{"p":"org.sqlproc.engine.spring","l":"SpringQuery"},{"p":"org.sqlproc.engine.spring","l":"SpringSessionFactory"},{"p":"org.sqlproc.engine.spring","l":"SpringSimpleSession"}]
