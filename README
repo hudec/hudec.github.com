@@ -24,9 +24,6 @@ mvn install:install-file -Dfile=sqlmeta.jar -DgroupId=org.sqlproc.meta -Dartifac
 mvn install:install-file -Dfile=sqlmodel.jar -DgroupId=org.sqlproc.model -DartifactId=sqlmodel -Dversion=3.1.0 -Dpackaging=jar
 
 SQLMEP/SQLMOP
-mvn install:install-file -Dfile=sqlmeta.jar -DgroupId=org.sqlproc.meta -DartifactId=sqlmeta -Dversion=3.1.0-SNAPSHOT -Dpackaging=jar
-mvn install:install-file -Dfile=sqlmodel.jar -DgroupId=org.sqlproc.model -DartifactId=sqlmodel -Dversion=3.1.0-SNAPSHOT -Dpackaging=jar
-
-mvn install:install-file -Dfile=sqlmeta.jar -DgroupId=org.sqlproc.meta -DartifactId=sqlmeta -Dversion=3.2.0 -Dpackaging=jar
-mvn install:install-file -Dfile=sqlmodel.jar -DgroupId=org.sqlproc.model -DartifactId=sqlmodel -Dversion=3.2.0 -Dpackaging=jar
+mvn install:install-file -Dfile=sqlmeta.jar -DgroupId=org.sqlproc.meta -DartifactId=sqlmeta -Dversion=3.3.0-SNAPSHOT -Dpackaging=jar
+mvn install:install-file -Dfile=sqlmodel.jar -DgroupId=org.sqlproc.model -DartifactId=sqlmodel -Dversion=3.3.0-SNAPSHOT -Dpackaging=jar
 
